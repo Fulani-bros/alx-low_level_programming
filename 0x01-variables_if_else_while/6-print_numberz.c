@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - print numbers between 0 to 9.
+ * main - prints numbers between 0 to 9.
  *
- * Return: Always 0 (Success/correct)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char i;
+	int i;
 
 	for (i = 48; i < 58; i++)
 	{
