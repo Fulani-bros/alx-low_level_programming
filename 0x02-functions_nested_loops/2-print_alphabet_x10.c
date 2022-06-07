@@ -2,8 +2,8 @@
 
 /**
  *print_alphabet_x10 - Print a - z 10 times
- * 
- */
+*/
+
 void print_alphabet_x10(void)
 {
 	int i;
