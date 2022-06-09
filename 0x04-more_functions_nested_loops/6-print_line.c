@@ -1,8 +1,8 @@
-i#include "main.h"
+#include "main.h"
 
 /**
- *  print_line - prints line
- *  @n: param
+ * print_line - prints line
+ * @n: param
  */
 
 void print_line(int n)
