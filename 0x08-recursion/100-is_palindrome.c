@@ -33,7 +33,7 @@ int p1(char *s, int l)
 	{
 		return (p1(s + 1, l - 2));
 	}
-	return(0);
+	return (0);
 }
 
 /**
