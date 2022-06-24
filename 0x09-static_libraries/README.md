@@ -1,1 +1,1 @@
-My Read Me
+Static library
