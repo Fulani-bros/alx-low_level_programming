@@ -1,23 +1,44 @@
 #include "main.h"
+
 /**
- * _strcmp - compares two strings
- * @s1: first string.
- * @s2: second string
- * Return: 0 if s1 and s2 are equals,
- * another number if not
- */
+ * _strspn - Locates a character in a string
+ *  @s: This is the main C string to be scanned.
+ *  @accept: This is the string containing the list of characters to match in s
+ *  Return: return count
+ *  */
 
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
+
 {
-	int i = 0, op = 0;
+	int i, j;
+	int count = 0;
+	char *str1, *str2;
 
-	while (op == 0)
+	str1 = s;
+	str2 = accept;
+
+	i = 0;
+	while (str1[i] != '\0') /*Declaring WHILE *s */
 	{
-		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+		j = 0;
+		while (str2[j] != '\0') /*Declaring WHILE *accept*/
+		{
+			if (str2[j] == str1[i]) /*Evaluate condition*/
+			{
+				count++; /*count number*/
+				break;
+			}
+
+			j++;    /*add j+1*/
+		}
+
+		if (s[i] != accept[j]) /*If aren't equals*/
+		{
 			break;
-		op = *(s1 + i) - *(s2 + i);
-		i++;
+		}
+
+		i++; /*add x+1*/
 	}
 
-	return (op);
+	return (count); /*return the value of count*/
 }
